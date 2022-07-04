@@ -39,7 +39,7 @@ class ReifenAdapter(
         holder.binding.lagerBestand.setImageResource(R.drawable.lagerbestand)
         holder.binding.tagSale.setImageResource(R.drawable.tag_sale)
         holder.binding.starsText.setImageResource(R.drawable.stars)
-        holder.binding.textPrice.text = "€${item.price}"
+        holder.binding.textPrice.text = "${item.price} €"
 
         if (item.sale) {
             holder.binding.tagSale.setImageResource(R.drawable.tag_sale)
