@@ -22,7 +22,5 @@ class MainActivity : AppCompatActivity() {
 
         binding.reifenRecycler.setHasFixedSize(true)
 
-        // der SnapHelper sorgt dafür dass die RecyclerView pro Item einrastet
-
     }
 }
