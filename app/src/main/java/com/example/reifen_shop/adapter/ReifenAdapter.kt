@@ -15,22 +15,18 @@ class ReifenAdapter(
     private val dataset: List<Reifen>
 ) : RecyclerView.Adapter<ReifenAdapter.ItemViewHolder>() {
 
-    // der ViewHolder kann über die DatabBinding Variable auf alle Layoutelemente zugreifen
     class ItemViewHolder(val binding: ReifenListBinding) : RecyclerView.ViewHolder(binding.root)
 
-    // hier werden neue ViewHolder erstellt
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ItemViewHolder {
 
         val binding = ReifenListBinding.inflate(LayoutInflater.from(parent.context), parent, false)
 
-        // und in einem ViewHolder zurückgegeben
+
         return ItemViewHolder(binding)
     }
 
-    // hier findet der Recyclingprozess statt
-    // die vom ViewHolder bereitgestellten Parameter werden verändert
     override fun onBindViewHolder(holder: ItemViewHolder, position: Int) {
-        // der aktuelle Fan wird von der Liste geladen
+
         val item = dataset[position]
 
         holder.binding.cardImage.setImageResource(item.imageResource)
@@ -48,7 +44,6 @@ class ReifenAdapter(
         }
     }
 
-    // damit der LayoutManager weiß wie lang die Liste ist
     override fun getItemCount(): Int {
         return dataset.size
     }
