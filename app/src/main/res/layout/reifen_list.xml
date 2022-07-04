@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="150dp"
+        android:layout_height="220dp"
+        android:layout_marginRight="20dp"
+        android:backgroundTint="@color/white"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="2dp">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/cardImage"
+                android:layout_width="135dp"
+                android:layout_height="88dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:contentDescription="TODO"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.036"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/reifen1" />
+
+            <TextView
+                android:id="@+id/textTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="@string/duro_he903_120_70_12_tl_56j_reifen"
+                android:textColor="@color/material_dynamic_neutral20"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/cardImage"
+                app:layout_constraintStart_toStartOf="@+id/cardImage"
+                app:layout_constraintTop_toBottomOf="@+id/cardImage" />
+
+            <TextView
+                android:id="@+id/textTeilenummer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/sku_ods141_mx"
+                android:textSize="8sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/cardImage"
+                app:layout_constraintTop_toBottomOf="@+id/cardImage" />
+
+            <TextView
+                android:id="@+id/textPrice"
+                android:layout_width="77dp"
+                android:layout_height="22dp"
+                android:layout_marginBottom="8dp"
+                android:text="@string/_64_99_eur"
+                android:textColor="@color/material_dynamic_neutral10"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/cardImage" />
+
+            <ImageView
+                android:id="@+id/tagSale"
+                android:layout_width="20dp"
+                android:layout_height="18dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:contentDescription="TODO"
+                app:layout_constraintStart_toStartOf="@+id/cardImage"
+                app:layout_constraintTop_toTopOf="@+id/cardImage"
+                tools:srcCompat="@drawable/tag_sale" />
+
+            <ImageView
+                android:id="@+id/shoppingCart"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:contentDescription="TODO"
+                app:layout_constraintBottom_toBottomOf="@+id/textPrice"
+                app:layout_constraintEnd_toEndOf="@+id/cardImage"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/textPrice"
+                app:layout_constraintTop_toTopOf="@+id/textPrice"
+                app:layout_constraintVertical_bias="0.428"
+                app:srcCompat="@drawable/ic_outline_shopping_cart_24" />
+
+            <ImageView
+                android:id="@+id/lagerBestand"
+                android:layout_width="25dp"
+                android:layout_height="10dp"
+                app:layout_constraintBottom_toBottomOf="@+id/textTeilenummer"
+                app:layout_constraintEnd_toEndOf="@+id/cardImage"
+                app:layout_constraintTop_toTopOf="@+id/textTeilenummer"
+                app:srcCompat="@drawable/lagerbestand"
+                tools:ignore="ImageContrastCheck" />
+
+            <ImageView
+                android:id="@+id/starsText"
+                android:layout_width="58dp"
+                android:layout_height="14dp"
+                android:layout_marginTop="4dp"
+                app:layout_constraintStart_toStartOf="@+id/textTitle"
+                app:layout_constraintTop_toBottomOf="@+id/textTitle"
+                app:srcCompat="@drawable/stars"
+                tools:ignore="ImageContrastCheck" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+</layout>
