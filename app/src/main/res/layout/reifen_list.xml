@@ -74,8 +74,8 @@
 
             <ImageView
                 android:id="@+id/tagSale"
-                android:layout_width="20dp"
-                android:layout_height="18dp"
+                android:layout_width="27dp"
+                android:layout_height="26dp"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
                 android:contentDescription="TODO"
@@ -100,8 +100,8 @@
 
             <ImageView
                 android:id="@+id/lagerBestand"
-                android:layout_width="25dp"
-                android:layout_height="10dp"
+                android:layout_width="41dp"
+                android:layout_height="17dp"
                 app:layout_constraintBottom_toBottomOf="@+id/textTeilenummer"
                 app:layout_constraintEnd_toEndOf="@+id/cardImage"
                 app:layout_constraintTop_toTopOf="@+id/textTeilenummer"
@@ -110,8 +110,8 @@
 
             <ImageView
                 android:id="@+id/starsText"
-                android:layout_width="58dp"
-                android:layout_height="14dp"
+                android:layout_width="115dp"
+                android:layout_height="31dp"
                 android:layout_marginTop="4dp"
                 app:layout_constraintStart_toStartOf="@+id/textTitle"
                 app:layout_constraintTop_toBottomOf="@+id/textTitle"

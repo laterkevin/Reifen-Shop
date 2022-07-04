@@ -8,7 +8,7 @@ class Datasource() {
     fun loadReifen(): List<Reifen> {
         return listOf(
             Reifen(
-                "Duro DM1017 Raider 120 TL",
+                "Duro DM1017 Raider",
                 42.66,
                 R.drawable.reifen1,
                 false
