@@ -21,7 +21,6 @@ class ReifenAdapter(
 
         val binding = ReifenListBinding.inflate(LayoutInflater.from(parent.context), parent, false)
 
-
         return ItemViewHolder(binding)
     }
 
